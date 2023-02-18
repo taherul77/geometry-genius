@@ -1,3 +1,5 @@
+
+
 function getInnerText(id) {
   return document.getElementById(id).innerText;
 }
@@ -11,41 +13,41 @@ function calculateTriangleArea(bhumiId, heightId) {
   let bhumi = getInputFieldValue(bhumiId);
   let height = getInputFieldValue(heightId);
   let triangleAreaValue = 0.5 * bhumi * height;
-  return triangleAreaValue;
+  return triangleAreaValue.toFixed(2);
 }
 
 function calculateRectangleArea(widthId, lengthId) {
   let width = getInputFieldValue(widthId);
   let length = getInputFieldValue(lengthId);
   let rectangleAreaValue = width * length;
-  return rectangleAreaValue;
+  return rectangleAreaValue.toFixed(2);
 }
 
 function calculateParallelogramArea(bhumiId, heightId) {
   let bhumi = getInputFieldValue(bhumiId);
   let height = getInputFieldValue(heightId);
   let parallelogramAreaValue = height * bhumi;
-  return parallelogramAreaValue;
+  return parallelogramAreaValue.toFixed(2);
 }
 
 function calculateRhombusArea(d1Id, d2Id) {
   let d1 = getInputFieldValue(d1Id);
   let d2 = getInputFieldValue(d2Id);
   let rhombusAreaValue = 0.5 * d1 * d2;
-  return rhombusAreaValue;
+  return rhombusAreaValue.toFixed(2);
 }
 
 function calculatePentagonArea(pId, bhumiId) {
   let p = getInputFieldValue(pId);
   let bhumi = getInputFieldValue(bhumiId);
   let pentagonAreaValue = 0.5 * p * bhumi;
-  return pentagonAreaValue;
+  return pentagonAreaValue.toFixed(2);
 }
 function calculateEllipseArea(aId, bId) {
   let a = getInputFieldValue(aId);
   let b = getInputFieldValue(bId);
   let ellipseAreaValue = 3.1416 * a * b;
-  return ellipseAreaValue;
+  return ellipseAreaValue.toFixed(2);
 }
 
 document
@@ -140,7 +142,7 @@ function displaySidebar(calcBtnId, result) {
 
 function convertCmToMeter(cmValue) {
   const meterValue = cmValue / 100;
-  document.querySelector(".cm-result").innerText = meterValue;
+  document.querySelector(".cm-result").innerText = meterValue.toFixed(2);
   document.querySelector(
     ".convert-button"
   ).parentElement.children[2].style.opacity = "40%";
