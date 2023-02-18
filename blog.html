@@ -1,140 +1,226 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Blog</title>
-    <link rel="shortcut icon" href="./images/geometry.png" type="image/x-icon" />
+    <link
+      rel="shortcut icon"
+      href="./images/geometry.png"
+      type="image/x-icon"
+    />
     <!-- css link -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.css" rel="stylesheet" />
-</head>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.css"
+      rel="stylesheet"
+    />
+  </head>
 
-<body class="container mx-auto">
+  <body class="max-w-[1400px] mx-auto">
     <!-- header portion -->
-    <header class="flex justify-between items-center h-20 px-5 bg-[#E7F4FB] mt-5 rounded-md">
-        <a href="index.html">
-            <div>
-                <h1 class="font-bold text-3xl text-[#3C3E40]">Interactive</h1>
-                <h3 class="text-[#8F969A] font-medium">Geometry Genius</h3>
-            </div>
-        </a>
+    <header
+      class="flex justify-between items-center h-20 px-5 bg-[#E7F4FB] mt-5 rounded-md"
+    >
+    <a href="index.html">
+      <h1 class="font-bold text-3xl text-[#3C3E40]">Interactive</h1>
+      <h3 class="text-[#8F969A] font-medium">Geometry Genius</h3>
+    </a>
 
-        <div>
-            <button type="button"
-                class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 focus:outline-none"><a
-                    href="blog.html">Blog</a>
-
-            </button>
-        </div>
+      <div>
+        <button
+          type="button"
+          class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 focus:outline-none"
+        >
+          <a href="blog.html">Blog</a>
+        </button>
+      </div>
     </header>
 
     <section class="mt-5">
-        <div id="accordion-color" data-accordion="collapse"
-            data-active-classes="bg-blue-100 dark:bg-gray-800 text-blue-600 dark:text-white">
-            <h2 id="accordion-color-heading-1">
-                <button type="button"
-                    class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-b-0 border-gray-200 rounded-t-xl focus:ring-4 focus:ring-blue-200 dark:focus:ring-blue-800 dark:border-gray-700 dark:text-gray-400 hover:bg-blue-100 dark:hover:bg-gray-800"
-                    data-accordion-target="#accordion-color-body-1" aria-expanded="true"
-                    aria-controls="accordion-color-body-1">
-                    <span>What is DOM and what is the purpose of DOM?</span>
-                    <svg data-accordion-icon class="w-6 h-6 rotate-180 shrink-0" fill="currentColor" viewBox="0 0 20 20"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd"
-                            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                            clip-rule="evenodd"></path>
-                    </svg>
-                </button>
-            </h2>
-            <div id="accordion-color-body-1" class="hidden" aria-labelledby="accordion-color-heading-1">
-                <div class="p-5 font-light border border-b-0 border-gray-200 dark:border-gray-700 dark:bg-gray-900">
-                    <p class="mb-2 text-gray-500 dark:text-gray-400">DOM is short for "The Document Object model".It is
-                        a programming API for HTML and XML documents.
-                        It defines a standard for accessing documents and DOM is a platform and language-neutral
-                        interface that allows programs and scripts to dynamically access and update the content,
-                        structure, and style of a document.</p>
-                </div>
-            </div>
-            <h2 id="accordion-color-heading-2">
-                <button type="button"
-                    class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-b-0 border-gray-200 focus:ring-4 focus:ring-blue-200 dark:focus:ring-blue-800 dark:border-gray-700 dark:text-gray-400 hover:bg-blue-100 dark:hover:bg-gray-800"
-                    data-accordion-target="#accordion-color-body-2" aria-expanded="false"
-                    aria-controls="accordion-color-body-2">
-                    <span>How will you select HTML elements using DOM? Name the DOM methods.</span>
-                    <svg data-accordion-icon class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd"
-                            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                            clip-rule="evenodd"></path>
-                    </svg>
-                </button>
-            </h2>
-            <div id="accordion-color-body-2" class="hidden" aria-labelledby="accordion-color-heading-2">
-                <div class="p-5 font-light border border-b-0 border-gray-200 dark:border-gray-700">
-                    <p class="mb-2 text-gray-500 dark:text-gray-400">There are 5 ways we can select html elements by
-                        using DOM.
-                        <li>getElementsByTagName()</li>
-                        <li>getElementsByClassName()</li>
-                        <li>getElementById()</li>
-                        <li>querySelector()</li>
-                        <li>querySelectorAll()</li>
-                        The greatest usual way to entry an HTML element is to use the id of the element.For
-                        example,above the getElementById method used id="demo" to find the element
-                    </p>
-                </div>
-            </div>
-            <h2 id="accordion-color-heading-3">
-                <button type="button"
-                    class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-gray-200 focus:ring-4 focus:ring-blue-200 dark:focus:ring-blue-800 dark:border-gray-700 dark:text-gray-400 hover:bg-blue-100 dark:hover:bg-gray-800"
-                    data-accordion-target="#accordion-color-body-3" aria-expanded="false"
-                    aria-controls="accordion-color-body-3">
-                    <span> What is event bubble?</span>
-                    <svg data-accordion-icon class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd"
-                            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                            clip-rule="evenodd"></path>
-                    </svg>
-                </button>
-            </h2>
-            <div id="accordion-color-body-3" class="hidden" aria-labelledby="accordion-color-heading-3">
-                <div class="p-5 font-light border border-t-0 border-gray-200 dark:border-gray-700">
-                    <p class="mb-2 text-gray-500 dark:text-gray-400">Event Bubbling is a concept in the DOM.It happens
-                        when an element receives an event,and that event bubbles up to its parent and ancestor elements
-                        in the DOM tree until it gets to the root element.So it simply means that the bubbles read-only
-                        property of the Event interface indicates whether the event bubbles up through the DOM tree or
-                        not.</p>
-                </div>
-            </div>
-            <h2 id="accordion-color-heading-4">
-                <button type="button"
-                    class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-gray-200 focus:ring-4 focus:ring-blue-200 dark:focus:ring-blue-800 dark:border-gray-700 dark:text-gray-400 hover:bg-blue-100 dark:hover:bg-gray-800"
-                    data-accordion-target="#accordion-color-body-4" aria-expanded="false"
-                    aria-controls="accordion-color-body-4">
-                    <span>What is a callback function and why will you use it?</span>
-                    <svg data-accordion-icon class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd"
-                            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                            clip-rule="evenodd"></path>
-                    </svg>
-                </button>
-            </h2>
-            <div id="accordion-color-body-4" class="hidden" aria-labelledby="accordion-color-heading-4">
-                <div class="p-5 font-light border border-t-0 border-gray-200 dark:border-gray-700">
-                    <p class="mb-2 text-gray-500 dark:text-gray-400">A callback function is a function that receives an
-                        input from another function and is subsequently called from inside the outer function to finish
-                        a task or activity. The aforementioned illustration is a synchronous callback since it is
-                        executed right away.When we want one function to execute only after another function has
-                        completed its execution, we use callback functions in JavaScript. It needs to pass as a
-                        parameter to other functions to make a function callback.</p>
-                </div>
-            </div>
+      <div
+        id="accordion-color"
+        data-accordion="collapse"
+        data-active-classes="bg-blue-100 dark:bg-gray-800 text-blue-600 dark:text-white"
+      >
+        <h2 id="accordion-color-heading-1">
+          <button
+            type="button"
+            class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-b-0 border-gray-200 rounded-t-xl focus:ring-4 focus:ring-blue-200 dark:focus:ring-blue-800 dark:border-gray-700 dark:text-gray-400 hover:bg-blue-100 dark:hover:bg-gray-800"
+            data-accordion-target="#accordion-color-body-1"
+            aria-expanded="true"
+            aria-controls="accordion-color-body-1"
+          >
+            <span>What is DOM and what is the purpose of DOM?</span>
+            <svg
+              data-accordion-icon
+              class="w-6 h-6 rotate-180 shrink-0"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </button>
+        </h2>
+        <div
+          id="accordion-color-body-1"
+          class="hidden"
+          aria-labelledby="accordion-color-heading-1"
+        >
+          <div
+            class="p-5 font-light border border-b-0 border-gray-200 dark:border-gray-700 dark:bg-gray-900"
+          >
+            <p class="mb-2 text-gray-500 dark:text-gray-400">
+              DOM is short for "The Document Object model".It is a programming
+              API for HTML and XML documents. It defines a standard for
+              accessing documents and DOM is a platform and language-neutral
+              interface that allows programs and scripts to dynamically access
+              and update the content, structure, and style of a document.
+            </p>
+          </div>
         </div>
+        <h2 id="accordion-color-heading-2">
+          <button
+            type="button"
+            class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-b-0 border-gray-200 focus:ring-4 focus:ring-blue-200 dark:focus:ring-blue-800 dark:border-gray-700 dark:text-gray-400 hover:bg-blue-100 dark:hover:bg-gray-800"
+            data-accordion-target="#accordion-color-body-2"
+            aria-expanded="false"
+            aria-controls="accordion-color-body-2"
+          >
+            <span
+              >How will you select HTML elements using DOM? Name the DOM
+              methods.</span
+            >
+            <svg
+              data-accordion-icon
+              class="w-6 h-6 shrink-0"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </button>
+        </h2>
+        <div
+          id="accordion-color-body-2"
+          class="hidden"
+          aria-labelledby="accordion-color-heading-2"
+        >
+          <div
+            class="p-5 font-light border border-b-0 border-gray-200 dark:border-gray-700"
+          >
+            <p class="mb-2 text-gray-500 dark:text-gray-400">
+              There are 5 ways we can select html elements by using DOM.
+              <li>getElementsByTagName()</li>
+              <li>getElementsByClassName()</li>
+              <li>getElementById()</li>
+              <li>querySelector()</li>
+              <li>querySelectorAll()</li>
+              The greatest usual way to entry an HTML element is to use the id
+              of the element.For example,above the getElementById method used
+              id="demo" to find the element
+            </p>
+          </div>
+        </div>
+        <h2 id="accordion-color-heading-3">
+          <button
+            type="button"
+            class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-gray-200 focus:ring-4 focus:ring-blue-200 dark:focus:ring-blue-800 dark:border-gray-700 dark:text-gray-400 hover:bg-blue-100 dark:hover:bg-gray-800"
+            data-accordion-target="#accordion-color-body-3"
+            aria-expanded="false"
+            aria-controls="accordion-color-body-3"
+          >
+            <span> What is event bubble?</span>
+            <svg
+              data-accordion-icon
+              class="w-6 h-6 shrink-0"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </button>
+        </h2>
+        <div
+          id="accordion-color-body-3"
+          class="hidden"
+          aria-labelledby="accordion-color-heading-3"
+        >
+          <div
+            class="p-5 font-light border border-t-0 border-gray-200 dark:border-gray-700"
+          >
+            <p class="mb-2 text-gray-500 dark:text-gray-400">
+              Event Bubbling is a concept in the DOM.It happens when an element
+              receives an event,and that event bubbles up to its parent and
+              ancestor elements in the DOM tree until it gets to the root
+              element.So it simply means that the bubbles read-only property of
+              the Event interface indicates whether the event bubbles up through
+              the DOM tree or not.
+            </p>
+          </div>
+        </div>
+        <h2 id="accordion-color-heading-4">
+          <button
+            type="button"
+            class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-gray-200 focus:ring-4 focus:ring-blue-200 dark:focus:ring-blue-800 dark:border-gray-700 dark:text-gray-400 hover:bg-blue-100 dark:hover:bg-gray-800"
+            data-accordion-target="#accordion-color-body-4"
+            aria-expanded="false"
+            aria-controls="accordion-color-body-4"
+          >
+            <span>What is a callback function and why will you use it?</span>
+            <svg
+              data-accordion-icon
+              class="w-6 h-6 shrink-0"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </button>
+        </h2>
+        <div
+          id="accordion-color-body-4"
+          class="hidden"
+          aria-labelledby="accordion-color-heading-4"
+        >
+          <div
+            class="p-5 font-light border border-t-0 border-gray-200 dark:border-gray-700"
+          >
+            <p class="mb-2 text-gray-500 dark:text-gray-400">
+              A callback function is a function that receives an input from
+              another function and is subsequently called from inside the outer
+              function to finish a task or activity. The aforementioned
+              illustration is a synchronous callback since it is executed right
+              away.When we want one function to execute only after another
+              function has completed its execution, we use callback functions in
+              JavaScript. It needs to pass as a parameter to other functions to
+              make a function callback.
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.js"></script>
-</body>
-
+  </body>
 </html>

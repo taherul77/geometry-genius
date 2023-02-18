@@ -1,274 +1,387 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Geometry Genius</title>
+    <link
+      rel="shortcut icon"
+      href="./images/geometry.png"
+      type="image/x-icon"
+    />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Geometry Genius</title>
-  <link rel="shortcut icon" href="./images/geometry.png" type="image/x-icon" />
-  <!-- css link -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.css" rel="stylesheet" />
-</head>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="max-w-[1400px] mx-auto">
+    <!-- header section starts  -->
 
-<body class="container mx-auto">
-
-  <!-- header portion -->
-  <header class="flex justify-between items-center h-20 px-5 bg-[#E7F4FB] mt-5 rounded-md">
-    <div>
-      <h1 class="font-bold text-3xl text-[#3C3E40]">Interactive</h1>
-      <h3 class="text-[#8F969A] font-medium">Geometry Genius</h3>
-    </div>
-    <div>
-      <a href="blog.html">
-
-
-        <button type="button"
-          class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 focus:outline-none">
-          Blog
-        </button>
+    <header
+      class="flex justify-between items-center h-20 px-5 bg-[#E7F4FB] mt-5 rounded-md"
+    >
+      <a href="index.html">
+        <h1 class="font-bold text-3xl text-[#3C3E40]">Interactive</h1>
+        <h3 class="text-[#8F969A] font-medium">Geometry Genius</h3>
       </a>
-    </div>
-  </header>
+      <div>
+        <a href="blog.html"
+          type="button" id="blog"
+          class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 focus:outline-none"
+        >
+          Blog
+        </a>
+      </div>
+    </header>
 
-  <main>
-    <section class="grid grid-cols-12 gap-5">
-      <div class="col-span-12 lg:col-span-8 grid grid-cols-12 mt-5 gap-3">
+    <!-- header section ends -->
 
-        <!-- triangle portion -->
+    <!-- main section starts  -->
 
-        <div
-          class="card hover:cursor-pointer max-w-sm bg-white border border-gray-200 rounded-lg shadow col-span-12 lg:col-span-4 text-center">
-          <div class="h-34">
-            <img class="w-[80%] h-34 mx-auto" src="./images/triangle.png" alt="" />
-          </div>
-          <div class="p-5 mt-[-30px]">
-            <a href="#">
-              <h5 id="triangle" class="mb-2 text-2xl font-bold tracking-tight text-gray-900">
+    <main>
+      <section class="grid grid-cols-12 gap-5">
+        <div class="col-span-12 lg:col-span-8 grid grid-cols-12 mt-5 gap-3">
+          <div
+            class="card hover:cursor-pointer max-w-sm bg-white border border-gray-200 rounded-lg shadow col-span-12 lg:col-span-4 text-center"
+          >
+            <div class="h-34">
+              <img
+                class="w-[80%] h-34 mx-auto"
+                src="./images/triangle.png"
+                alt=""
+              />
+            </div>
+            <div class="p-5 mt-[-30px]">
+              <h5
+                id="triangle"
+                class="mb-2 text-2xl font-bold tracking-tight text-gray-900"
+              >
                 Triangle
               </h5>
-            </a>
-            <p class="mb-3 font-normal text-gray-700">
-              Area (A) = 0.5 × b × h
-            </p>
 
-            <div class="w-10/12 mx-auto flex justify-center gap-4">
-              <div class="flex items-center gap-2">
-                <input placeholder="b" type="text" id="triangle-bhumi"
-                  class="w-9/12 text-gray-900 border border-gray-300 rounded-md h-7 bg-gray-50 sm:text-xs focus:ring-blue-500 focus:border-blue-500" />
-                <p>cm</p>
+              <p class="mb-3 font-normal text-gray-700">
+                Area (A) = 0.5 × b × h
+              </p>
+
+              <div class="w-10/12 mx-auto flex justify-center gap-4">
+                <div class="flex items-center gap-2">
+                  <input
+                    placeholder="b"
+                    type="text"
+                    id="triangle-bhumi"
+                    class="w-9/12 text-gray-900 border border-gray-300 rounded-md h-7 bg-gray-50 sm:text-xs focus:ring-blue-500 focus:border-blue-500"
+                  />
+                  <p>cm</p>
+                </div>
+                <div class="flex items-center gap-2">
+                  <input
+                    placeholder="h"
+                    type="text"
+                    id="triangle-height"
+                    class="w-9/12 text-gray-900 border border-gray-300 rounded-md h-7 bg-gray-50 sm:text-xs focus:ring-blue-500 focus:border-blue-500"
+                  />
+                  <p>cm</p>
+                </div>
               </div>
-              <div class="flex items-center gap-2">
-                <input placeholder="h" type="text" id="triangle-height"
-                  class="w-9/12 text-gray-900 border border-gray-300 rounded-md h-7 bg-gray-50 sm:text-xs focus:ring-blue-500 focus:border-blue-500" />
-                <p>cm</p>
-              </div>
+
+              <button
+                type="button"
+                id="triangle-calculate-button"
+                class="calculate-buttons w-full text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-md text-sm px-5 py-2.5 mt-5"
+              >
+                Calculate
+              </button>
             </div>
-
-            <button type="button" id="triangle-calculate-button"
-              class="calculate-buttons w-full text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-md text-sm px-5 py-2.5 mt-5">
-              Calculate
-            </button>
           </div>
-        </div>
 
-        <!-- rectangle portion -->
-
-        <div
-          class="card hover:cursor-pointer max-w-sm bg-white border border-gray-200 rounded-lg shadow col-span-12 lg:col-span-4 text-center">
-          <div class="h-34">
-            <img class="w-[80%] h-34 mx-auto" src="./images/rectangle.png" alt="" />
-          </div>
-          <div class="p-5 mt-[-30px]">
-            <a href="#">
-              <h5 id="rectangle" class="mb-2 text-2xl font-bold tracking-tight text-gray-900">
+          <div
+            class="card hover:cursor-pointer max-w-sm bg-white border border-gray-200 rounded-lg shadow col-span-12 lg:col-span-4 text-center"
+          >
+            <div class="h-34">
+              <img
+                class="w-[80%] h-34 mx-auto"
+                src="./images/rectangle.png"
+                alt=""
+              />
+            </div>
+            <div class="p-5 mt-[-30px]">
+              <h5
+                id="rectangle"
+                class="mb-2 text-2xl font-bold tracking-tight text-gray-900"
+              >
                 Rectangle
               </h5>
-            </a>
-            <p class="mb-3 font-normal text-gray-700">Area (A) = w × l</p>
 
-            <div class="w-10/12 mx-auto flex justify-center gap-4">
-              <div class="flex items-center gap-2">
-                <input placeholder="w" type="text" id="rectangle-width"
-                  class="w-9/12 text-gray-900 border border-gray-300 rounded-md h-7 bg-gray-50 sm:text-xs focus:ring-blue-500 focus:border-blue-500" />
-                <p>cm</p>
+              <p class="mb-3 font-normal text-gray-700">Area (A) = w × l</p>
+
+              <div class="w-10/12 mx-auto flex justify-center gap-4">
+                <div class="flex items-center gap-2">
+                  <input
+                    placeholder="w"
+                    type="text"
+                    id="rectangle-width"
+                    class="w-9/12 text-gray-900 border border-gray-300 rounded-md h-7 bg-gray-50 sm:text-xs focus:ring-blue-500 focus:border-blue-500"
+                  />
+                  <p>cm</p>
+                </div>
+                <div class="flex items-center gap-2">
+                  <input
+                    placeholder="l"
+                    type="text"
+                    id="rectangle-length"
+                    class="w-9/12 text-gray-900 border border-gray-300 rounded-md h-7 bg-gray-50 sm:text-xs focus:ring-blue-500 focus:border-blue-500"
+                  />
+                  <p>cm</p>
+                </div>
               </div>
-              <div class="flex items-center gap-2">
-                <input placeholder="l" type="text" id="rectangle-length"
-                  class="w-9/12 text-gray-900 border border-gray-300 rounded-md h-7 bg-gray-50 sm:text-xs focus:ring-blue-500 focus:border-blue-500" />
-                <p>cm</p>
-              </div>
+
+              <button
+                type="button"
+                id="rectangle-calculate-button"
+                class="calculate-buttons w-full text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-md text-sm px-5 py-2.5 mt-5"
+              >
+                Calculate
+              </button>
             </div>
-
-            <button type="button" id="rectangle-calculate-button"
-              class="calculate-buttons w-full text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-md text-sm px-5 py-2.5 mt-5">
-              Calculate
-            </button>
           </div>
-        </div>
 
-        <!-- parallelogram portion  -->
-
-        <div
-          class="card hover:cursor-pointer max-w-sm bg-white border border-gray-200 rounded-lg shadow col-span-12 lg:col-span-4 text-center">
-          <div class="h-34">
-            <img class="w-[80%] h-34 mx-auto" src="./images/parallelogram.png" alt="" />
-          </div>
-          <div class="p-5 mt-[-30px]">
-            <a href="#">
-              <h5 id="parallelogram" class="mb-2 text-2xl font-bold tracking-tight text-gray-900">
+          <div
+            class="card hover:cursor-pointer max-w-sm bg-white border border-gray-200 rounded-lg shadow col-span-12 lg:col-span-4 text-center"
+          >
+            <div class="h-34">
+              <img
+                class="w-[80%] h-34 mx-auto"
+                src="./images/parallelogram.png"
+                alt=""
+              />
+            </div>
+            <div class="p-5 mt-[-30px]">
+              <h5
+                id="parallelogram"
+                class="mb-2 text-2xl font-bold tracking-tight text-gray-900"
+              >
                 Parallelogram
               </h5>
-            </a>
-            <p class="mb-3 font-normal text-gray-700">Area (A) = b × h</p>
 
-            <div class="w-10/12 mx-auto flex justify-center gap-4">
-              <div class="flex items-center gap-2">
-                <input placeholder="b" type="text" id="parallelogram-bhumi"
-                  class="w-9/12 text-gray-900 border border-gray-300 rounded-md h-7 bg-gray-50 sm:text-xs focus:ring-blue-500 focus:border-blue-500" />
-                <p>cm</p>
+              <p class="mb-3 font-normal text-gray-700">Area (A) = b × h</p>
+
+              <div class="w-10/12 mx-auto flex justify-center gap-4">
+                <div class="flex items-center gap-2">
+                  <input
+                    placeholder="b"
+                    type="text"
+                    id="parallelogram-bhumi"
+                    class="w-9/12 text-gray-900 border border-gray-300 rounded-md h-7 bg-gray-50 sm:text-xs focus:ring-blue-500 focus:border-blue-500"
+                  />
+                  <p>cm</p>
+                </div>
+                <div class="flex items-center gap-2">
+                  <input
+                    placeholder="h"
+                    type="text"
+                    id="parallelogram-height"
+                    class="w-9/12 text-gray-900 border border-gray-300 rounded-md h-7 bg-gray-50 sm:text-xs focus:ring-blue-500 focus:border-blue-500"
+                  />
+                  <p>cm</p>
+                </div>
               </div>
-              <div class="flex items-center gap-2">
-                <input placeholder="h" type="text" id="parallelogram-height"
-                  class="w-9/12 text-gray-900 border border-gray-300 rounded-md h-7 bg-gray-50 sm:text-xs focus:ring-blue-500 focus:border-blue-500" />
-                <p>cm</p>
-              </div>
+
+              <button
+                type="button"
+                id="parallelogram-calculate-button"
+                class="calculate-buttons w-full text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-md text-sm px-5 py-2.5 mt-5"
+              >
+                Calculate
+              </button>
             </div>
-
-            <button type="button" id="parallelogram-calculate-button"
-              class="calculate-buttons w-full text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-md text-sm px-5 py-2.5 mt-5">
-              Calculate
-            </button>
           </div>
-        </div>
 
-        <!-- rhombus portion  -->
-
-        <div
-          class="card hover:cursor-pointer max-w-sm bg-white border border-gray-200 rounded-lg shadow col-span-12 lg:col-span-4 text-center">
-          <div class="h-34">
-            <img class="w-[80%] h-34 mx-auto" src="./images/rhombus.png" alt="" />
-          </div>
-          <div class="p-5 mt-[-30px]">
-            <a href="#">
-              <h5 id="rhombus" class="mb-2 text-2xl font-bold tracking-tight text-gray-900">
+          <div
+            class="card hover:cursor-pointer max-w-sm bg-white border border-gray-200 rounded-lg shadow col-span-12 lg:col-span-4 text-center"
+          >
+            <div class="h-34">
+              <img
+                class="w-[80%] h-34 mx-auto"
+                src="./images/rhombus.png"
+                alt=""
+              />
+            </div>
+            <div class="p-5 mt-[-30px]">
+              <h5
+                id="rhombus"
+                class="mb-2 text-2xl font-bold tracking-tight text-gray-900"
+              >
                 Rhombus
               </h5>
-            </a>
-            <p class="mb-3 font-normal text-gray-700">
-              Area (A) = 0.5 × d1 × d2
-            </p>
 
-            <div class="w-10/12 mx-auto flex justify-center gap-4">
-              <div class="flex items-center gap-2">
-                <input placeholder="d1" type="text" id="rhombus-d1"
-                  class="w-9/12 text-gray-900 border border-gray-300 rounded-md h-7 bg-gray-50 sm:text-xs focus:ring-blue-500 focus:border-blue-500" />
-                <p>cm</p>
+              <p class="mb-3 font-normal text-gray-700">
+                Area (A) = 0.5 × d1 × d2
+              </p>
+
+              <div class="w-10/12 mx-auto flex justify-center gap-4">
+                <div class="flex items-center gap-2">
+                  <input
+                    placeholder="d1"
+                    type="text"
+                    id="rhombus-d1"
+                    class="w-9/12 text-gray-900 border border-gray-300 rounded-md h-7 bg-gray-50 sm:text-xs focus:ring-blue-500 focus:border-blue-500"
+                  />
+                  <p>cm</p>
+                </div>
+                <div class="flex items-center gap-2">
+                  <input
+                    placeholder="d2"
+                    type="text"
+                    id="rhombus-d2"
+                    class="w-9/12 text-gray-900 border border-gray-300 rounded-md h-7 bg-gray-50 sm:text-xs focus:ring-blue-500 focus:border-blue-500"
+                  />
+                  <p>cm</p>
+                </div>
               </div>
-              <div class="flex items-center gap-2">
-                <input placeholder="d2" type="text" id="rhombus-d2"
-                  class="w-9/12 text-gray-900 border border-gray-300 rounded-md h-7 bg-gray-50 sm:text-xs focus:ring-blue-500 focus:border-blue-500" />
-                <p>cm</p>
-              </div>
+
+              <button
+                type="button"
+                id="rhombus-calculate-button"
+                class="calculate-buttons w-full text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-md text-sm px-5 py-2.5 mt-5"
+              >
+                Calculate
+              </button>
             </div>
-
-            <button type="button" id="rhombus-calculate-button"
-              class="calculate-buttons w-full text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-md text-sm px-5 py-2.5 mt-5">
-              Calculate
-            </button>
           </div>
-        </div>
 
-        <!-- pentagon portion  -->
-
-        <div
-          class="card hover:cursor-pointer max-w-sm bg-white border border-gray-200 rounded-lg shadow col-span-12 lg:col-span-4 text-center">
-          <div class="h-34">
-            <img class="w-[80%] h-34 mx-auto" src="./images/pentagon.png" alt="" />
-          </div>
-          <div class="p-5 mt-[-30px]">
-            <a href="#">
-              <h5 id="pentagon" class="mb-2 text-2xl font-bold tracking-tight text-gray-900">
+          <div
+            class="card hover:cursor-pointer max-w-sm bg-white border border-gray-200 rounded-lg shadow col-span-12 lg:col-span-4 text-center"
+          >
+            <div class="h-34">
+              <img
+                class="w-[80%] h-34 mx-auto"
+                src="./images/pentagon.png"
+                alt=""
+              />
+            </div>
+            <div class="p-5 mt-[-30px]">
+              <h5
+                id="pentagon"
+                class="mb-2 text-2xl font-bold tracking-tight text-gray-900"
+              >
                 Pentagon
               </h5>
-            </a>
-            <p class="mb-3 font-normal text-gray-700">
-              Area (A) = 0.5 × p × b
-            </p>
 
-            <div class="w-10/12 mx-auto flex justify-center gap-4">
-              <div class="flex items-center gap-2">
-                <input placeholder="p" type="text" id="pentagon-p"
-                  class="w-9/12 text-gray-900 border border-gray-300 rounded-md h-7 bg-gray-50 sm:text-xs focus:ring-blue-500 focus:border-blue-500" />
-                <p>cm</p>
+              <p class="mb-3 font-normal text-gray-700">
+                Area (A) = 0.5 × p × b
+              </p>
+
+              <div class="w-10/12 mx-auto flex justify-center gap-4">
+                <div class="flex items-center gap-2">
+                  <input
+                    placeholder="p"
+                    type="text"
+                    id="pentagon-p"
+                    class="w-9/12 text-gray-900 border border-gray-300 rounded-md h-7 bg-gray-50 sm:text-xs focus:ring-blue-500 focus:border-blue-500"
+                  />
+                  <p>cm</p>
+                </div>
+                <div class="flex items-center gap-2">
+                  <input
+                    placeholder="b"
+                    type="text"
+                    id="pentagon-bhumi"
+                    class="w-9/12 text-gray-900 border border-gray-300 rounded-md h-7 bg-gray-50 sm:text-xs focus:ring-blue-500 focus:border-blue-500"
+                  />
+                  <p>cm</p>
+                </div>
               </div>
-              <div class="flex items-center gap-2">
-                <input placeholder="b" type="text" id="pentagon-bhumi"
-                  class="w-9/12 text-gray-900 border border-gray-300 rounded-md h-7 bg-gray-50 sm:text-xs focus:ring-blue-500 focus:border-blue-500" />
-                <p>cm</p>
-              </div>
+
+              <button
+                type="button"
+                id="pentagon-calculate-button"
+                class="calculate-buttons w-full text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-md text-sm px-5 py-2.5 mt-5"
+              >
+                Calculate
+              </button>
             </div>
-
-            <button type="button" id="pentagon-calculate-button"
-              class="calculate-buttons w-full text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-md text-sm px-5 py-2.5 mt-5">
-              Calculate
-            </button>
           </div>
-        </div>
 
-        <!-- ellipse portion  -->
-
-        <div
-          class="card hover:cursor-pointer max-w-sm bg-white border border-gray-200 rounded-lg shadow col-span-12 lg:col-span-4 text-center">
-          <div class="h-34">
-            <img class="w-[80%] h-34 mx-auto" src="./images/ellipse.png" alt="" />
-          </div>
-          <div class="p-5 mt-[-30px]">
-            <a href="#">
-              <h5 id="ellipse" class="mb-2 text-2xl font-bold tracking-tight text-gray-900">
+          <div
+            class="card hover:cursor-pointer max-w-sm bg-white border border-gray-200 rounded-lg shadow col-span-12 lg:col-span-4 text-center"
+          >
+            <div class="h-34">
+              <img
+                class="w-[80%] h-34 mx-auto"
+                src="./images/ellipse.png"
+                alt=""
+              />
+            </div>
+            <div class="p-5 mt-[-30px]">
+              <h5
+                id="ellipse"
+                class="mb-2 text-2xl font-bold tracking-tight text-gray-900"
+              >
                 Ellipse
               </h5>
-            </a>
-            <p class="mb-3 font-normal text-gray-700">Area (A) = πab</p>
 
-            <div class="w-10/12 mx-auto flex justify-center gap-4">
-              <div class="flex items-center gap-2">
-                <input placeholder="a" type="text" id="ellipse-a"
-                  class="w-9/12 text-gray-900 border border-gray-300 rounded-md h-7 bg-gray-50 sm:text-xs focus:ring-blue-500 focus:border-blue-500" />
-                <p>cm</p>
+              <p class="mb-3 font-normal text-gray-700">Area (A) = πab</p>
+
+              <div class="w-10/12 mx-auto flex justify-center gap-4">
+                <div class="flex items-center gap-2">
+                  <input
+                    placeholder="a"
+                    type="text"
+                    id="ellipse-a"
+                    class="w-9/12 text-gray-900 border border-gray-300 rounded-md h-7 bg-gray-50 sm:text-xs focus:ring-blue-500 focus:border-blue-500"
+                  />
+                  <p>cm</p>
+                </div>
+                <div class="flex items-center gap-2">
+                  <input
+                    placeholder="b"
+                    type="text"
+                    id="ellipse-b"
+                    class="w-9/12 text-gray-900 border border-gray-300 rounded-md h-7 bg-gray-50 sm:text-xs focus:ring-blue-500 focus:border-blue-500"
+                  />
+                  <p>cm</p>
+                </div>
               </div>
-              <div class="flex items-center gap-2">
-                <input placeholder="b" type="text" id="ellipse-b"
-                  class="w-9/12 text-gray-900 border border-gray-300 rounded-md h-7 bg-gray-50 sm:text-xs focus:ring-blue-500 focus:border-blue-500" />
-                <p>cm</p>
-              </div>
+
+              <button
+                type="button"
+                id="ellipse-calculate-button"
+                class="calculate-buttons w-full text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-md text-sm px-5 py-2.5 mt-5"
+              >
+                Calculate
+              </button>
             </div>
-
-            <button type="button" id="ellipse-calculate-button"
-              class="calculate-buttons w-full text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-md text-sm px-5 py-2.5 mt-5">
-              Calculate
-            </button>
           </div>
         </div>
-      </div>
 
-      <!-- Area Calculation portion for calculate value -->
+        <!-- area calculate section starts  -->
 
-      <div class="col-span-12 lg:col-span-4 mt-5">
-        <div class="card hover:cursor-pointer max-w-sm bg-white border border-gray-200 rounded-lg shadow min-h-[400px]">
-          <h2 class="text-lg font-medium text-center underline underline-offset-4 mt-5">
-            Area Calculation
-          </h2>
-          <ol id="order-list-container" class="list-decimal p-4 order-list">
-          </ol>
+        <div class="col-span-12 lg:col-span-4 mt-5">
+          <div
+            class="bg-white border border-gray-200 rounded-lg shadow min-h-[400px]"
+          >
+            <h2
+              class="text-lg font-medium text-center underline underline-offset-4 mt-5"
+            >
+              Area Calculation
+            </h2>
+            <ol
+              id="order-list-container"
+              class="list-decimal p-4 order-list ml-8"
+            ></ol>
+          </div>
         </div>
-      </div>
-    </section>
-  </main>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.js"></script>
-  <script src="script.js"></script>
-</body>
+        <!-- area calculate section ends -->
+      </section>
+    </main>
 
+    <!-- main section ends -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.js"></script>
+    <script src="script.js"></script>
+  </body>
 </html>
