@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Geometry Genius</title>
+  <link rel="shortcut icon" href="./images/geometry.png" type="image/x-icon" />
+  <!-- css link -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.css" rel="stylesheet" />
+</head>
+
+<body class="container mx-auto">
+
+  <!-- header portion -->
+  <header class="flex justify-between items-center h-20 px-5 bg-[#E7F4FB] mt-5 rounded-md">
+    <div>
+      <h1 class="font-bold text-3xl text-[#3C3E40]">Interactive</h1>
+      <h3 class="text-[#8F969A] font-medium">Geometry Genius</h3>
+    </div>
+    <div>
+      <button type="button"
+        class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 focus:outline-none">
+        Blog
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="grid grid-cols-12 gap-5">
+      <div class="col-span-12 lg:col-span-8 grid grid-cols-12 mt-5 gap-3">
+
+        <!-- triangle portion -->
+
+        <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow col-span-12 lg:col-span-4 text-center">
+          <div class="h-34">
+            <img class="w-[80%] h-34 mx-auto" src="./images/triangle.png" alt="" />
+          </div>
+          <div class="p-5 mt-[-30px]">
+            <a href="#">
+              <h5 id="triangle" class="mb-2 text-2xl font-bold tracking-tight text-gray-900">
+                Triangle
+              </h5>
+            </a>
+            <p class="mb-3 font-normal text-gray-700">
+              Area (A) = 0.5 × b × h
+            </p>
+
+            <div class="w-10/12 mx-auto flex justify-center gap-4">
+              <div class="flex items-center gap-2">
+                <input placeholder="b" type="text" id="triangle-bhumi"
+                  class="w-9/12 text-gray-900 border border-gray-300 rounded-md h-7 bg-gray-50 sm:text-xs focus:ring-blue-500 focus:border-blue-500" />
+                <p>cm</p>
+              </div>
+              <div class="flex items-center gap-2">
+                <input placeholder="h" type="text" id="triangle-height"
+                  class="w-9/12 text-gray-900 border border-gray-300 rounded-md h-7 bg-gray-50 sm:text-xs focus:ring-blue-500 focus:border-blue-500" />
+                <p>cm</p>
+              </div>
+            </div>
+
+            <button type="button" id="triangle-calculate-button"
+              class="calculate-buttons w-full text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-md text-sm px-5 py-2.5 mt-5">
+              Calculate
+            </button>
+          </div>
+        </div>
+
+    </section>
+  </main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
