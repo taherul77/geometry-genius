@@ -127,7 +127,7 @@ function displaySidebar(calcBtnId, result) {
   const shapeName =
     document.getElementById(calcBtnId).parentElement.children[0].children[0]
       .innerText;
-  console.log(shapeName);
+  
   const container = document.getElementById("order-list-container");
   const elementCreate = document.createElement("li");
   elementCreate.classList.add("grid", "grid-cols-12", "mb-4", "items-center");
@@ -139,7 +139,25 @@ function displaySidebar(calcBtnId, result) {
   container.appendChild(elementCreate);
 }
 
-document.getElementById("meter-convert-button").addEventListener("click",() =>{
-  // getInnerText("cm-result")
-console.log(getInnerText("cm-result"));
-})
+// document.getElementById("meter-convert-button").addEventListener("click",() =>{
+//   // getInnerText("cm-result")
+// console.log(getInnerText("cm-result"));
+// })
+
+
+function randomColor() {
+  let color = [];
+  for (let i = 0; i < 3; i++) {
+    color.push(Math.floor(Math.random() * 256));
+  }
+  return "rgb(" + color.join(", ") + ")";
+}
+const cards = document.getElementsByClassName("card");
+for (const card of cards) {
+  card.addEventListener("mouseover", () => {
+    card.style.backgroundColor = randomColor();
+  });
+  card.addEventListener("mouseout", () => {
+    card.style.backgroundColor = "#fff";
+  });
+}
